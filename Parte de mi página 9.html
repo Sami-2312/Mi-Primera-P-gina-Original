@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Parte de la página</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" 
+        rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
+        crossorigin="anonymous">
+        <style>
+            header, section, .resto, article, footer{
+                padding: 1cm;
+                border: none;
+            }
+            body {
+                padding: 7mm;
+                padding-top: 23mm;
+            }  
+            #gmail {
+                color:rgb(228, 184, 205);
+            }
+            #gmail:hover {
+                color: rgb(7, 85, 81);
+            }
+            #gmail:active{
+                color:rgb(184, 255, 222);
+            } 
+            header, .resto, footer  {
+                background-color: aquamarine;
+            }
+
+            .resto, header {
+                text-align: center;
+            }
+
+            Body {
+                background-color: #6d6d6d;
+            }
+
+            section {
+                background-color: rgb(255, 187, 227);
+            }
+            #presentación {
+                text-align: left;
+            }
+            h1, h2, h3, h4, h5, h6{
+                font-family: 'Satisfy', 'Homemade Apple', Georgia;
+                font-weight: 700;
+            }
+            .normal, footer, #contenido-menú, body nav div table th a button  {
+                font-family: 'Crafty Girls', 'Architects Daughter', 'Trebuchet MS' ;
+                font-size: 90%;
+            }
+            .descripción{
+                font-family: 'Courier New', Courier, monospace;
+                font-size: 70%;
+                text-align: left;
+            }
+            body nav div table th a button, #menu-contenido, #más { 
+                border-bottom-right-radius: 0%;
+                border-bottom-left-radius: 0%;
+                border-top-left-radius: 0%;
+                border-color: rgb(253, 161, 204);
+                background-color: rgb(0, 0, 0);
+                color: rgb(252, 231, 162);
+            }
+            body nav div table th a button, #menu-contenido {
+                text-indent: 3ch;
+            }
+            body nav div table th a button, #más {
+                border-top-right-radius: 6mm;
+            }
+            #menu-contenido {
+                border-top-right-radius: 0%;
+                margin-right: 0%;
+            }
+            #más {
+                padding: 9px;
+                margin-right: 0%;
+            }
+            body nav div table th a button:hover, #menu-contenido:hover, #más:hover {
+                border-color: rgb(185, 17, 96);
+                background-color: rgb(255, 255, 255);
+                color: rgb(255, 201, 25);
+            }
+            body nav div table th a button:active, #menu-contenido:active, #más:active {
+                border-color: rgb(92, 255, 220);
+                background-color: rgb(253, 161, 204);
+                color: rgb(255, 214, 80);
+            }
+            nav {
+                position: fixed;
+                top: 3mm;
+                left: 3mm;
+                background: rgb(0, 0, 0);
+                border-top-right-radius: 6mm;
+                border-bottom-left-radius: 6mm;
+                border-bottom-right-radius: 2mm;
+                border-top-left-radius: 2mm;
+            }
+            #contenido-menú {
+                background-color: black;
+            }
+            #contenido-menú:hover{
+                background-color: aliceblue;
+            }
+            #intro, #menu-contenido {
+                padding: 9px;
+            }
+            #botón, header {
+                padding: 3mm;
+                border: none;
+            }
+        </style>
+    </head>
+
+    <body>
+        <nav>
+            <div id="botón">
+                <table id="menu">
+                    <th>
+                        <a href="C:\Users\saman\Music\Página Html Artística\mi primera página.html">
+                            <button id="inicio" style= "margin: 0%;" type="button">
+                                <img src="C:\Users\saman\Music\Página Html Artística\casa boton.png" alt="Volver al inicio" width="65">
+                            </button>
+                        </a>
+                    </th>
+                    <th>
+                        <a href="C:\Users\saman\Music\Página Html Artística\mi primera página.html #descripción">
+                            <button id="intro" style= "margin: 0%;" type="button">Introducción</button>
+                        </a>
+                    </th>
+                    <th class="dropdown">
+                        <a href="C:\Users\saman\Music\Página Html Artística\mi primera página.html #tabla-contenido">
+                            <button id="menu-contenido" style= "margin: 0%;" type="button" class="btn btn-secondary">
+                                Menú de Contenido
+                            </button>
+                        </a>
+                        <button type="button" id="más" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="visually-hidden">Toggle Dropdown</span>
+                        </button>
+                        <ul id="contenido-menú" class="dropdown-menu">
+                            <li>
+                                <a href="C:\Users\saman\Music\Página Html Artística\Parte de mi página.html">
+                                    <button type="button">Planos Fotográficos</button>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="file:///C:/Users/saman/Music/Página Html Artística/parte%20de%20mi%20p%C3%A1gina%202.html">
+                                    <button type="button">Ángulos Fotográficos</button>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="C:\Users\saman\Music\Página Html Artística\Parte de mi página 3.html">
+                                    <button type="button">Ley de Tercios</button>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="C:\Users\saman\Music\Página Html Artística\Parte de mi página 4.html">
+                                    <button type="button">Iluminación</button>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="C:\Users\saman\Music\Página Html Artística\Parte de mi página 5.html">
+                                    <button type="button">Enfoque</button>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="C:\Users\saman\Music\Página Html Artística\Parte de mi página 6.html">
+                                    <button type="button">Encuadre Fotográfico</button>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="C:\Users\saman\Music\Página Html Artística\Parte de mi página 7.html">
+                                    <button type="button">Apropiación en la Fotografía</button>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="C:\Users\saman\Music\Página Html Artística\Parte de mi página 8.html">
+                                    <button type="button">Intervención Fotográfica</button>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="C:\Users\saman\Music\Página Html Artística\Parte de mi página 9.html">
+                                    <button type="button">Ensayo Fotográfico</button>
+                                </a>
+                            </li>
+                        </ul>            
+                    </th>
+                </table>
+            </div>
+        </nav>
+
+        <header>
+            <img src="C:\Users\saman\Music\Página Html Artística\cámara logo.png"
+                alt="logo de camara">
+            <h1 style="margin: -2.0%;" id="blog">Blog de Samy</h1>
+            <p class="normal" style="margin: +2.5%;">
+                <i>Un Blog de Fotografía</I>
+            </p>
+        </header>
+        
+        <br>
+
+        <section>
+
+            <div class="resto" id="presentación">
+                <h2>Ensayo Fotográfico</h2>
+                <h4 style="margin: +2.5%;">
+                10 Fotografías de <b><i>Chica Narrando una Historia</I></b>
+                </h4>
+                <p class="normal"><b><i>Este Ensayo tiene como base un parrafo en el que se narra la historia de una doncella, 
+                    más sus fotografías son adaptaciones modernas.</i></b><br><br>
+                    En el año 1810 tuvo lugar en Francia un caso de inhumación prematura, en<br>
+                    circunstancias que contribuyen mucho a justificar la afirmación de que la<br>
+                    verdad es más extraña que la ficción. La heroína de la historia era<br>
+                    mademoiselle Victorine Lafourcade, una joven de ilustre familia, rica y muy<br>
+                    guapa. Entre sus numerosos pretendientes se contaba Julien Bossuet, un pobre<br>
+                    littérateur o periodista de París. Su talento y su amabilidad habían despertado<br>
+                    la atención de la heredera, que, al parecer, se había enamorado realmente de él,<br>
+                    pero el orgullo de casta la llevó por fin a rechazarlo y a casarse con un tal<br>
+                    Monsieur Rénelle, banquero y diplomático de cierto renombre. Después del<br>
+                    matrimonio, sin embargo, este caballero descuidó a su mujer y quizá llegó a<br>
+                    pegarle.<br><br>
+
+                    Después de pasar unos años desdichados ella murió; al menos su estado se<br>
+                    parecía tanto al de la muerte que engañó a todos quienes la vieron. Fue<br>
+                    enterrada, no en una cripta, sino en una tumba común, en su aldea natal.<br>
+                    Desesperado y aún inflamado por el recuerdo de su cariño profundo, el<br>
+                    enamorado viajó de la capital a la lejana provincia donde se encontraba la<br>
+                    aldea, con el romántico propósito de desenterrar el cadáver y apoderarse de<br>
+                    sus preciosos cabellos. Llegó a la tumba. A medianoche desenterró el ataúd, lo<br>
+                    abrió y, cuando iba a cortar los cabellos, se detuvo ante los ojos de la amada,<br>
+                    que se abrieron. La dama había sido enterrada viva. Las pulsaciones vitales no<br>
+                    habían desaparecido del todo, y las caricias de su amado la despertaron de<br>
+                    aquel letargo que equivocadamente había sido confundido con la muerte.<br>
+                    Desesperado, el joven la llevó a su alojamiento en la aldea. Empleó unos<br>
+                    poderosos reconstituyentes aconsejados por sus no pocos conocimientos<br>
+                    médicos. En resumen, ella revivió. Reconoció a su salvador. Permaneció con<br>
+                    él hasta que lenta y gradualmente recobró la salud. Su corazón no era tan duro,<br>
+                    y esta última lección de amor bastó para ablandarlo. Lo entregó a Bossuet. No<br>
+                    volvió junto a su marido, sino que, ocultando su resurrección, huyó con su<br>
+                    amante a América. Veinte años después, los dos regresaron a Francia,<br>
+                    convencidos de que el paso del tiempo había cambiado tanto la apariencia de<br>
+                    la dama, que sus amigos no podrían reconocerla. Pero se equivocaron, pues al<br>
+                    primer encuentro monsieur Rénelle reconoció a su mujer y la reclamó. Ella<br>
+                    rechazó la reclamación y el tribunal la apoyó, resolviendo que las extrañas<br>
+                    circunstancias y el largo período transcurrido habían abolido, no sólo desde un<br>
+                    punto de vista equitativo, sino legalmente la autoridad del marido.<br>
+                </p>
+            </div>
+
+            <article>
+                <h4>Imágenes:</h4>
+
+                <div class="resto" id="general"style= "margin: +2cm;">
+                    <img src="C:\Users\saman\Music\Página Html Artística\ensayo\IMG_20220322_214416.jpg" alt="diorama mujer"
+                    width="400">
+                    <p class="descripción">Encuadre Vertical. Luz Artificial/Frontal/Suave. Enfoque a la dama-Automatico/lineal. Plano Americano. Ángulo Contrapicado</p>
+                </div>
+
+                <div  class="resto" id="americano"style= "margin: +2cm;">
+                    <img src="C:\Users\saman\Music\Página Html Artística\ensayo\IMG_20220322_215738.jpg" alt="Diorama el buscón" width="400">
+                    <p class="descripción">Ecuadre Vertical. Luz Artificial/Lateral/Semidifusa. Enfoque Manos-Dinamico. Plano Americano. Ángulo Contrapicado</p>
+                </div>
+                
+                <div class="resto" id="Primer"style= "margin: +2cm">
+                    <img src="C:\Users\saman\Music\Página Html Artística\ensayo\IMG_20220322_220640.jpg" alt="árbol " width="470">
+                    <p class="descripción">Encuadre Vertical. Luz Artificial/Lateral/Semidifusa. Enfoque Mano-Manual/Punto único. Punto Áureo, Mano. Plano Medio. Ángulo Normal</p>
+                </div>
+
+                <div class="resto" id="Primer"style= "margin: +2cm">
+                    <img src="C:\Users\saman\Music\Página Html Artística\ensayo\IMG_20220322_221247.jpg" alt="árbol " width="470">
+                    <p class="descripción">Encuadre Vertical. Luz Artificial/Lateral/Semidifusa. Plano Medio. Ángulo Normal</p>
+                </div>
+
+                <div class="resto" id="Primer"style= "margin: +2cm">
+                    <img src="C:\Users\saman\Music\Página Html Artística\ensayo\IMG_20220322_221553.jpg" alt="árbol " width="470">
+                    <p class="descripción">Encuadre Vertical. Luz Artificial/Contrapicada/Semidifusa. Plano General. Ángulo Picado</p>
+                </div>
+
+                <div class="resto" id="Primer"style= "margin: +2cm">
+                    <img src="C:\Users\saman\Music\Página Html Artística\ensayo\IMG_20220322_221903.jpg" alt="árbol " width="470">
+                    <p class="descripción">Encuadre Vertical. Luz Artificial/Cenital/Suave. Plano Americano. Ángulo Cenital</p>
+                </div>
+
+                <div class="resto" id="Primer"style= "margin: +2cm">
+                    <img src="C:\Users\saman\Music\Página Html Artística\ensayo\IMG_20220322_222617 (2).jpg" alt="árbol " width="470">
+                    <p class="descripción">Encuadre Horizontal. Luz Artificial/Cenital/Dura. Plano Entero. Ángulo Cenital</p>
+                </div>
+
+                <div class="resto" id="Primer"style= "margin: +2cm">
+                    <img src="C:\Users\saman\Music\Página Html Artística\ensayo\IMG_20220322_222741.jpg" alt="árbol " width="470">
+                    <p class="descripción">Encuadre Diagonal. Luz Artificial/Semilateral/Semidifusa. Enfoque Mano-Automatico/Dinamico. Punto Áureo, Rostro de la dama. Primer Plano. Ángulo Picado</p>
+                </div>
+
+                <div class="resto" id="Primer"style= "margin: +2cm">
+                    <img src="C:\Users\saman\Music\Página Html Artística\ensayo\IMG_20220322_223022.jpg" alt="árbol " width="470">
+                    <p class="descripción">Encuadre Vertical. Luz Artificial/Lateral/Semidifusa. Enfoque Mano-Manual/Dinamico. Punto Áureo, Mano. Plano Americano. Ángulo Contrapicado/Normal</p>
+                </div>
+
+                <div class="resto" id="Primer"style= "margin: +2cm">
+                    <img src="C:\Users\saman\Music\Página Html Artística\ensayo\IMG_20220322_223124.jpg" alt="árbol " width="470">
+                    <p class="descripción">Encuadre Vertical. Luz Artificial/Frontal/Suave. Plano Entero. Ángulo Normal</p>
+                </div>
+            </article>
+
+            <article>
+                <h4>Detrás de Cámaras:</h4>
+
+                <div class="resto" id="general"style= "margin: +2cm;">
+                    <img src="C:\Users\saman\Music\Página Html Artística\ensayo\IMG_20220322_215642.jpg" alt="detrás de cámaras"
+                    width="400">
+                    <img src="C:\Users\saman\Music\Página Html Artística\ensayo\IMG_20220322_215652.jpg" alt="detrás de cámaras"
+                    width="400">
+                    <img src="C:\Users\saman\Music\Página Html Artística\ensayo\d. camaras 1.jpg" alt="detrás de cámaras"
+                    width="400">
+                    <img src="C:\Users\saman\Music\Página Html Artística\ensayo\d. camaras 4.jpg" alt="detrás de cámaras"
+                    width="400">
+                </div>
+            </article>
+        </section>
+
+        <aside>
+            <h4>Creada por: Samantha Marín</h4>
+            <h4>Gmail: <a id="gmail"href="mailto:samanthalaflaquita@gmail.com" ><em>samanthalaflaquita@gmail.com</em></a></h4>
+        </aside>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <footer>
+        <footer>
+            Todos los Derechos Reservados
+        </footer>
+
+    </body>
+</html>

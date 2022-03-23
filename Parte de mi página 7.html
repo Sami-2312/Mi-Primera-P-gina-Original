@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Parte de la página</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" 
+        rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
+        crossorigin="anonymous">
+        <style>
+            header, section, .resto, article, footer{
+                padding: 1cm;
+                border: none;
+            }
+            body {
+                padding: 7mm;
+                padding-top: 23mm;
+            }  
+            #gmail {
+                color:rgb(228, 184, 205);
+            }
+            #gmail:hover {
+                color: rgb(7, 85, 81);
+            }
+            #gmail:active{
+                color:rgb(184, 255, 222);
+            } 
+            header, .resto, footer  {
+                background-color: aquamarine;
+            }
+
+            .resto, header {
+                text-align: center;
+            }
+
+            Body {
+                background-color: #6d6d6d;
+            }
+
+            section {
+                background-color: rgb(255, 187, 227);
+            }
+            #presentación {
+                text-align: left;
+            }
+            h1, h2, h3, h4, h5, h6{
+                font-family: 'Satisfy', 'Homemade Apple', Georgia;
+                font-weight: 700;
+            }
+            .normal, footer, #contenido-menú, body nav div table th a button  {
+                font-family: 'Crafty Girls', 'Architects Daughter', 'Trebuchet MS' ;
+                font-size: 90%;
+            }
+            .descripción{
+                font-family: 'Courier New', Courier, monospace;
+                font-size: 70%;
+                text-align: left;
+            }
+            body nav div table th a button, #menu-contenido, #más { 
+                border-bottom-right-radius: 0%;
+                border-bottom-left-radius: 0%;
+                border-top-left-radius: 0%;
+                border-color: rgb(253, 161, 204);
+                background-color: rgb(0, 0, 0);
+                color: rgb(252, 231, 162);
+            }
+            body nav div table th a button, #menu-contenido {
+                text-indent: 3ch;
+            }
+            body nav div table th a button, #más {
+                border-top-right-radius: 6mm;
+            }
+            #menu-contenido {
+                border-top-right-radius: 0%;
+                margin-right: 0%;
+            }
+            #más {
+                padding: 9px;
+                margin-right: 0%;
+            }
+            body nav div table th a button:hover, #menu-contenido:hover, #más:hover {
+                border-color: rgb(185, 17, 96);
+                background-color: rgb(255, 255, 255);
+                color: rgb(255, 201, 25);
+            }
+            body nav div table th a button:active, #menu-contenido:active, #más:active {
+                border-color: rgb(92, 255, 220);
+                background-color: rgb(253, 161, 204);
+                color: rgb(255, 214, 80);
+            }
+            nav {
+                position: fixed;
+                top: 3mm;
+                left: 3mm;
+                background: rgb(0, 0, 0);
+                border-top-right-radius: 6mm;
+                border-bottom-left-radius: 6mm;
+                border-bottom-right-radius: 2mm;
+                border-top-left-radius: 2mm;
+            }
+            #contenido-menú {
+                background-color: black;
+            }
+            #contenido-menú:hover{
+                background-color: aliceblue;
+            }
+            #intro, #menu-contenido {
+                padding: 9px;
+            }
+            #botón, header {
+                padding: 3mm;
+                border: none;
+            }
+        </style>
+    </head>
+
+    <body>
+        <nav>
+            <div id="botón">
+                <table id="menu">
+                    <th>
+                        <a href="C:\Users\saman\Music\Página Html Artística\mi primera página.html">
+                            <button id="inicio" style= "margin: 0%;" type="button">
+                                <img src="C:\Users\saman\Music\Página Html Artística\casa boton.png" alt="Volver al inicio" width="65">
+                            </button>
+                        </a>
+                    </th>
+                    <th>
+                        <a href="C:\Users\saman\Music\Página Html Artística\mi primera página.html #descripción">
+                            <button id="intro" style= "margin: 0%;" type="button">Introducción</button>
+                        </a>
+                    </th>
+                    <th class="dropdown">
+                        <a href="C:\Users\saman\Music\Página Html Artística\mi primera página.html #tabla-contenido">
+                            <button id="menu-contenido" style= "margin: 0%;" type="button" class="btn btn-secondary">
+                                Menú de Contenido
+                            </button>
+                        </a>
+                        <button type="button" id="más" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="visually-hidden">Toggle Dropdown</span>
+                        </button>
+                        <ul id="contenido-menú" class="dropdown-menu">
+                            <li>
+                                <a href="C:\Users\saman\Music\Página Html Artística\Parte de mi página.html">
+                                    <button type="button">Planos Fotográficos</button>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="file:///C:/Users/saman/Music/Página Html Artística/parte%20de%20mi%20p%C3%A1gina%202.html">
+                                    <button type="button">Ángulos Fotográficos</button>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="C:\Users\saman\Music\Página Html Artística\Parte de mi página 3.html">
+                                    <button type="button">Ley de Tercios</button>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="C:\Users\saman\Music\Página Html Artística\Parte de mi página 4.html">
+                                    <button type="button">Iluminación</button>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="C:\Users\saman\Music\Página Html Artística\Parte de mi página 5.html">
+                                    <button type="button">Enfoque</button>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="C:\Users\saman\Music\Página Html Artística\Parte de mi página 6.html">
+                                    <button type="button">Encuadre Fotográfico</button>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="C:\Users\saman\Music\Página Html Artística\Parte de mi página 7.html">
+                                    <button type="button">Apropiación en la Fotografía</button>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="C:\Users\saman\Music\Página Html Artística\Parte de mi página 8.html">
+                                    <button type="button">Intervención Fotográfica</button>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="C:\Users\saman\Music\Página Html Artística\Parte de mi página 9.html">
+                                    <button type="button">Ensayo Fotográfico</button>
+                                </a>
+                            </li>
+                        </ul>            
+                    </th>
+                </table>
+            </div>
+        </nav>
+
+        <header>
+            <img src="C:\Users\saman\Music\Página Html Artística\cámara logo.png"
+                alt="logo de camara">
+            <h1 style="margin: -2.0%;" id="blog">Blog de Samy</h1>
+            <p class="normal" style="margin: +2.5%;">
+                <i>Un Blog de Fotografía</I>
+            </p>
+        </header>
+
+        <br>
+
+        <section>
+
+            <div class="resto" id="presentación">
+                <h2>Apropiación en la Fotografía</h2>
+                <h4 style="margin: +2.5%;">
+                Apropiación Fotográfica<b><i>Pintura de Fatina
+                </I></b>
+                </h4>
+            </div>
+
+            <article> 
+                <h4>Imágenes:</h4>
+
+                <div class="resto" id="general"style= "margin: +2cm;">
+                    <img src="C:\Users\saman\Music\Página Html Artística\foto de foto\pintura artistica.jpg" alt="Original"
+                    width="400">
+                    <img src="C:\Users\saman\Music\Página Html Artística\foto de foto\buena.jpg" alt="copia" id="uno" 
+                    width="400">
+                    <p class="descripción">Pintura de Fatina, de la Pelicula Los Miserables. Cambios: Ropa, Iluminación, Fondo.
+                    </p>
+                    <p class="descripción">Encuadre Vertical. Iluminación Artificial/Frontal/Semidifusa. Enfoque Automatico. 
+                        Primer Plano. Ángulo Normal
+                    </p>
+                </div>
+
+            </article>
+
+            <article>
+                <h4>Detrás de Cámaras:</h4>
+
+                <div class="resto" id="general"style= "margin: +2cm;">
+                    <img src="C:\Users\saman\Music\Página Html Artística\foto de foto\IMG_20220317_214611.jpg" alt="detrás de cámaras"
+                    width="300">
+                </div>
+            </article>
+        </section>
+
+        <aside>
+            <h4>Creada por: Samantha Marín</h4>
+            <h4>Gmail: <a id="gmail"href="mailto:samanthalaflaquita@gmail.com"><em>samanthalaflaquita@gmail.com</em></a></h4>
+        </aside>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <footer>
+            Todos los Derechos Reservados
+        </footer>
+
+    </body>
+</html>
